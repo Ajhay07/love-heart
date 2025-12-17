@@ -1,3 +1,5 @@
+console.log("script loaded", document.getElementById("scene"));
+
 const scene = document.getElementById("scene");
 const TEXT = "I love you";
 const COUNT = 90;          // 🔥 reduced safely
@@ -56,3 +58,4 @@ function animate() {
 }
 
 animate();
+
