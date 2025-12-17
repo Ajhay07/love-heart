@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#heart {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.love {
+  position: absolute;
+  color: #ea80b0;
+  font-size: 1.4rem;
+  font-family: monospace;
+  white-space: nowrap;
+  text-shadow: 0 0 10px #fff;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
