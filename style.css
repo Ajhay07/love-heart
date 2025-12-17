@@ -8,24 +8,25 @@ body {
   overflow: hidden;
 }
 
-#heart {
+#scene {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 520px;
+  height: 520px;
 }
 
-.love {
+.word {
   position: absolute;
-  color: #ea80b0;
-  font-size: 1.4rem;
   font-family: monospace;
+  font-size: 1.3rem;
   white-space: nowrap;
-  text-shadow: 0 0 10px #fff;
-  animation: float 4s ease-in-out infinite;
-}
 
-@keyframes float {
-  0% { opacity: 0.4; }
-  50% { opacity: 1; }
-  100% { opacity: 0.4; }
+  /* 🔥 tighten "I love you" internally */
+  letter-spacing: -0.08em;
+
+  color: #ea80b0;
+  text-shadow: 0 0 8px #fff;
+  pointer-events: none;
+
+  transform-origin: center;
+  will-change: transform, opacity;
 }
